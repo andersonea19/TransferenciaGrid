@@ -100,7 +100,7 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.724);
+    background-color: rgba(0, 0, 0, 0.564);
     background-blend-mode: overlay;
     width: 100%;
     color: white;
@@ -118,7 +118,7 @@ main{
     grid-area: main__title;
     width: 100%;
     color: white;
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
     align-self: center;
     gap: 20px;
@@ -128,16 +128,17 @@ main{
 .main__description {
     grid-area: main__description;
     margin-bottom: 10%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     padding: 0 30px;
     color: white;
+    justify-self: initial;
 }
 
 .main__description--Two {
     grid-area: main__description--Two;
-    justify-self: left;
-    text-align: right;
+    justify-self: end;
+    margin-top: 10%;
 }
 
 .boton {
@@ -170,7 +171,7 @@ main{
     height: auto;
     background: linear-gradient(to bottom, black 20%, transparent), 
                 linear-gradient(to bottom, transparent 80%, black);
-    padding: 5%;
+    padding: 15% 0;
     display: grid;
 }
 
@@ -190,17 +191,17 @@ main{
 .chancletas__container {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 500px));
+    grid-template-columns: repeat(3, minmax(150px, 500px));
     justify-self: center;
-    margin-top: 10%;
-    gap: 2cm;
+    margin-top: 5%;
+    gap: 1.5cm;
 }
 
 .main__producto {
-    width: 400px;
+    max-width: 450px;
     background-color: transparent;
     border-radius: 30px;
-    border: 3px solid white;
+    border: 3px solid black;
     justify-self: center;
     padding: 20px;
 }
@@ -212,10 +213,33 @@ main{
 
 .main__producto:nth-child(1){
     color: white;
+    border-color: white;
 }
+
+.main__producto:nth-child(1) .boton--producto {
+    border-color: white;
+    color: white;
+}
+
+.main__producto:nth-child(2) .boton--producto {
+    border-color: white;
+    color: white;
+}
+
+.main__producto:nth-child(3) .boton--producto {
+    border-color: white;
+    color: white;
+}
+
 
 .main__producto:nth-child(2) {
     color: white;
+    border-color: white;
+}
+
+.main__producto:nth-child(3) {
+    color: white;
+    border-color: white;
 }
 
 .chancletas__img {
