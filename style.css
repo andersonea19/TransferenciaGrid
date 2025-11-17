@@ -195,11 +195,11 @@ main{
     justify-self: center;
     justify-items: center;
     padding: 20px;
-    
 }
 
 .main__producto {
     background-color: white;
+    border-radius: 30px;
 }
 
 .Product__title {
@@ -216,9 +216,15 @@ footer {
     height: auto;
     background-color: black;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 0.8fr 2fr 1fr 2fr;
     padding: 20px;
-    gap: 25px;
+    gap: 20px;
+}
+
+.nikeFooter {
+    max-width: 100px;
+    align-self: center;
+    /* justify-self: center; */
 }
 
 .apartado__derechos {
@@ -226,40 +232,19 @@ footer {
     color: white;
 }
 
-.derechos__title {
-    font-size: 2rem;
+.title__column {
+    font-size: 1.5rem;
     padding-bottom: 10px;
 }
 
 .list__item {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
-.apartado__redes {
-    color: white;
-    padding: 20px;
-}
-
-.apartado__redes a {
-    padding: 10px;
+.apartado--redes a {
     display: block;
     font-size: 1.3rem;
     color: white;
-}
-
-.redes__title {
-    font-size: 2rem;
-    padding-bottom: 10px;
-}
-
-.apartado__contact {
-    padding: 20px;
-    color: white;
-}
-
-.contact__title {
-    font-size: 2rem;
-    padding-bottom: 10px;
 }
 
 .title__lugar {
