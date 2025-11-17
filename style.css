@@ -140,7 +140,7 @@ main{
     text-align: right;
 }
 
-.main__button {
+.boton {
     grid-area: main__button;
     width: 20%;
     font-size: 2rem;
@@ -154,12 +154,12 @@ main{
     transition: background-color 0.2s ease-in, transform 0.2s ease, border 0.2s;
 }
 
-.main__button:hover{
+.boton:hover{
     transform: scale(1.1);
     border: 2px solid white;
 }
 
-.main__button a {
+.boton a {
     text-decoration: none;
     color: white;
     transition: color 0.2s ease;
@@ -170,7 +170,7 @@ main{
     height: auto;
     background: linear-gradient(to bottom, black 20%, transparent), 
                 linear-gradient(to bottom, transparent 80%, black);
-    padding-top: 5%;
+    padding: 5%;
     display: grid;
 }
 
@@ -188,18 +188,21 @@ main{
 }
 
 .chancletas__container {
-    width: 75%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 500px));
     justify-self: center;
-    justify-items: center;
-    padding: 20px;
+    margin-top: 10%;
+    gap: 2cm;
 }
 
 .main__producto {
-    background-color: white;
+    width: 400px;
+    background-color: transparent;
     border-radius: 30px;
+    border: 3px solid white;
+    justify-self: center;
+    padding: 20px;
 }
 
 .Product__title {
@@ -207,8 +210,36 @@ main{
     text-align: center;
 }
 
+.main__producto:nth-child(1){
+    color: white;
+}
+
+.main__producto:nth-child(2) {
+    color: white;
+}
+
 .chancletas__img {
-    width: 200px;
+    max-width: 300px;
+    display: flex;
+    justify-self: center;
+}
+
+.boton--producto {
+    width: auto;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 80px;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+}
+
+.boton--producto:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
 }
 
 footer {
@@ -224,7 +255,6 @@ footer {
 .nikeFooter {
     max-width: 100px;
     align-self: center;
-    /* justify-self: center; */
 }
 
 .apartado__derechos {
